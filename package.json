@@ -14,7 +14,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -b source -d build"
+    "deploy": "gh-pages -b  -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +27,8 @@
   ],
   "devDependencies": {
     "gh-pages": "^2.0.1"
+  },
+  "resolutions": {
+    "terser": "3.14.1"
   }
 }
