@@ -17,7 +17,7 @@ const style = {
         height: "100%",
         overflow: "hidden",
         textAlign: "center",
-        background: "#6CADDC"
+        background: "#FFFFFFFFF"
       },
       img: {
         width: "60%",
@@ -35,7 +35,7 @@ const style = {
 
 
 const Card = props => (
-  <div className="card" style={style.card} onClick={() => props.clickCount(props.id)}>
+  <div className="card" style={style.card} onClick={() => props.clicker(props.id)}>
     <div className="img-container" style={style.imgContainer}>
       <img alt={props.name} src={props.image} />
     </div>

@@ -15,6 +15,27 @@ class App extends Component {
 
   }
 
+  // AlertOver = score => {
+
+  // }
+
+  Clicker = id => {
+    this.state.friends.find((o, i) => {
+      if (o.id === id) {
+        if(friends[i].count === 0){
+          friends[i].count = friends[i].count + 1;
+          this.setState({score : this.state.score + 1}, function(){
+            console.log(this.state.score);
+          });
+          this.state.friends.sort(() => Math.random() - 0.5)
+          return true; 
+        } else {
+          this.AlertOver();
+        }
+      }
+    });
+  }
+
 
   render() {
 
