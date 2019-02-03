@@ -1,42 +1,43 @@
 import React from "react";
+import "./Card.css";
 
 
-const style = {
-    card: {
-        background: "#fff",
-        borderRadius: "2px",
-        height: "250px",
-        margin: "1rem",
-        position: "relative",
-        width: "325px",
-        boxShadow: "0 3px 6px #999, 0 3px 6px #999",
-        textAlign: "left"
-      },
+// const style = {
+//     card: {
+//         background: "#fff",
+//         borderRadius: "2px",
+//         height: "250px",
+//         margin: "1rem",
+//         position: "relative",
+//         width: "325px",
+//         boxShadow: "0 3px 6px #999, 0 3px 6px #999",
+//         textAlign: "left"
+//       },
       
-      imgContainer: {
-        height: "100%",
-        overflow: "hidden",
-        textAlign: "center",
-        background: "#FFFFF"
-      },
-      img: {
-        width: "60%",
-        maxWidth: "250px"
-      },
+//       imgContainer: {
+//         height: "100%",
+//         overflow: "hidden",
+//         textAlign: "center",
+//         background: "#FFFFF"
+//       },
+//       img: {
+//         width: "60%",
+//         maxWidth: "250px"
+//       },
       
-      content: {
-        paddingLeft: "1rem",
-        paddingRight: "1rem",
-        fontSize: "15px"
-      }
+//       content: {
+//         paddingLeft: "1rem",
+//         paddingRight: "1rem",
+//         fontSize: "15px"
+//       }
 
-}
+// }
 
 
 
 const Card = props => (
-  <div className="card" style={style.card} onClick={() => props.clickCount(props.id)}>
-    <div className="img-container" style={style.imgContainer}>
+  <div className="card"onClick={() => props.clickCount(props.id)}>
+    <div className="img-container" >
       <img alt={props.name} src={props.image} />
     </div>
   </div>
