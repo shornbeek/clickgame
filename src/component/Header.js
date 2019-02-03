@@ -17,13 +17,13 @@ const styles = {
       }
   };
 
-const Header = props => (
-  <div className="header" styles={styles.header}>
-    <div className="title" styles={styles.title}>{props.children}</div>
-    <div className="scores" styles={styles.scores}>
-      Score: {props.score} Highscore: {props.highscore}
+  const Header = props => (
+    <div className="header" style={styles.header}>
+      <div style={styles.title} className="title">{props.children} </div>
+      <div className="scores" style={styles.scores}>
+        Score: {props.score} Highscore: {props.highscore}
+      </div>
     </div>
-  </div>
-);
-
-export default Header;
+  );
+  
+  export default Header;
