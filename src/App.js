@@ -15,11 +15,7 @@ class App extends Component {
 
   }
 
-  // AlertOver = score => {
-
-  // }
-
-  Clicker = id => {
+  clickCount = id => {
     this.state.friends.find((o, i) => {
       if (o.id === id) {
         if(friends[i].count === 0){
@@ -30,7 +26,7 @@ class App extends Component {
           this.state.friends.sort(() => Math.random() - 0.5)
           return true; 
         } else {
-          this.AlertOver();
+          this.gameOver();
         }
       }
     });
