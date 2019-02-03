@@ -26,9 +26,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "gh-pages": "^2.0.1"
-  },
-  "resolutions": {
-    "terser": "3.14.1"
+    "gh-pages": "^2.0.1",
+    "terser": "3.14"
   }
+
 }
